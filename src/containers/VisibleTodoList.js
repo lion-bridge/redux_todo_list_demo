@@ -26,8 +26,10 @@ const mapDispatchToProps = dispatch => {
       dispatch(toggleTodo(id))
     }
   }
-}
-
+};
+// TodoList是纯粹的UI组件，只负责展示数据
+// mapStateToProps:输出逻辑
+// mapDispatchToProps:输入逻辑
 const VisibleTodoList = connect(
   mapStateToProps,
   mapDispatchToProps
